@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Advisor Dashboard | Combat Domestic Violence</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        .navbar {
+            background-color: #4CAF50;
+            padding: 15px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+        .navbar button {
+            background-color: #ff6666;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            padding: 20px;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            border-bottom: 1px solid #555;
+        }
+        .sidebar a:hover {
+            background-color: #4CAF50;
+        }
+        .content {
+            margin-left: 20%;
+            padding: 20px;
+            background-color: #fff;
+            min-height: 100vh;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .legal-actions {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .legal-card {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 30%;
+            text-align: center;
+        }
+        .legal-card h3 {
+            margin-top: 0;
+        }
+        .legal-card p {
+            color: #777;
+        }
+        .legal-card button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <a href="home.jsp">Home</a>
+    <a href="about.jsp">About Us</a>
+    <a href="support.jsp">Get Support</a>
+    <a href="logout.jsp">Logout</a>
+</nav>
+
+<!-- Sidebar Menu -->
+<div class="sidebar">
+    <h2>Legal Advisor Menu</h2>
+    <a href="viewCases.jsp">View Legal Cases</a>
+    <a href="updateLegalResources.jsp">Update Legal Resources</a>
+    <a href="legalCounseling.jsp">Legal Counseling</a>
+    <a href="lawEnforcement.jsp">Liaise with Law Enforcement</a>
+</div>
+
+<!-- Main Content Section -->
+<div class="content">
+    <h1>Legal Advisor Dashboard</h1>
+    <div class="legal-actions">
+
+        <!-- View Legal Cases Card -->
+        <div class="legal-card">
+            <h3>View Legal Cases</h3>
+            <p>Track and manage legal cases related to domestic violence. Monitor case progress and offer legal advice.</p>
+            <button onclick="window.location.href='viewCases.jsp'">View Cases</button>
+        </div>
+
+        <!-- Update Legal Resources Card -->
+        <div class="legal-card">
+            <h3>Update Legal Resources</h3>
+            <p>Keep legal resources, laws, and regulations updated for both survivors and legal advisors.</p>
+            <button onclick="window.location.href='updateLegalResources.jsp'">Update Resources</button>
+        </div>
+
+        <!-- Legal Counseling Card -->
+        <div class="legal-card">
+            <h3>Provide Legal Counseling</h3>
+            <p>Offer survivors legal guidance on protective orders, restraining orders, and other legal actions they can take.</p>
+            <button onclick="window.location.href='legalCounseling.jsp'">Provide Counseling</button>
+        </div>
+
+        <!-- Law Enforcement Liaison Card -->
+        <div class="legal-card">
+            <h3>Liaise with Law Enforcement</h3>
+            <p>Collaborate with law enforcement agencies to ensure the legal safety of survivors and aid in case investigations.</p>
+            <button onclick="window.location.href='lawEnforcement.jsp'">Liaise with Law Enforcement</button>
+        </div>
+
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <p>&copy; 2024 FSD-PS03 | Gender-responsive Mechanism to Combat Domestic Violence</p>
+</footer>
+
+</body>
+</html>

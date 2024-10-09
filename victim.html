@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survivor Support | Combat Domestic Violence</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        .navbar {
+            background-color: #4CAF50;
+            padding: 15px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+        .navbar button {
+            background-color: #ff6666;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .content {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .support-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .support-card {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 30%;
+            text-align: center;
+        }
+        .support-card h3 {
+            margin-top: 0;
+        }
+        .support-card p {
+            color: #777;
+        }
+        .support-card button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .emergency {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        .emergency h2 {
+            margin: 0;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="support.jsp">Get Support</a>
+    <a href="legal.jsp">Legal Rights</a>
+    <button onclick="window.location.href='LogoutServlet'">Logout</button>
+</nav>
+
+<!-- Emergency Section -->
+<div class="emergency">
+    <h2>In Immediate Danger? Call Emergency Services: 911</h2>
+</div>
+
+<!-- Main Content Section -->
+<div class="content">
+    <h1>Survivor Support</h1>
+    <p>We are here to help you through this difficult time. Access resources, counseling, and legal assistance to ensure your safety and well-being.</p>
+    <div class="support-section">
+
+        <!-- Emergency Exit Button -->
+        <div class="support-card" style="background-color: #ff6666; color: white;">
+            <h3>Emergency Exit</h3>
+            <p>Click this button if you need to leave this page quickly. It will immediately redirect you to a neutral site.</p>
+            <button onclick="window.location.href='https://www.google.com'">Quick Exit</button>
+        </div>
+
+        <!-- Access Counseling Services Card -->
+        <div class="support-card">
+            <h3>Access Counseling</h3>
+            <p>Speak with a trained counselor to guide you through emotional recovery and provide you with support.</p>
+            <button onclick="window.location.href='counseling.jsp'">Get Counseling</button>
+        </div>
+
+        <!-- Safe Housing Card -->
+        <div class="support-card">
+            <h3>Find Safe Housing</h3>
+            <p>Locate emergency shelters or safe spaces where you and your family can stay protected.</p>
+            <button onclick="window.location.href='shelter.jsp'">Find Housing</button>
+        </div>
+
+        <!-- Legal Aid Card -->
+        <div class="support-card">
+            <h3>Legal Assistance</h3>
+            <p>Understand your legal rights and take legal action if necessary. Our legal advisors are here to help.</p>
+            <button onclick="window.location.href='legal.jsp'">Get Legal Help</button>
+        </div>
+
+        <!-- Hotline Support Card -->
+        <div class="support-card">
+            <h3>24/7 Hotline Support</h3>
+            <p>Speak to professionals who can offer immediate advice, emotional support, and safety planning anytime.</p>
+            <button onclick="window.location.href='hotline.jsp'">Call Hotline</button>
+        </div>
+        
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <p>&copy; 2024 FSD-PS03 | Gender-responsive Mechanism to Combat Domestic Violence</p>
+</footer>
+
+</body>
+</html>

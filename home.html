@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Combat Domestic Violence</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef;
+            color: #333;
+        }
+        .navbar {
+            background-color: #007bff;
+            padding: 15px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+        .navbar button {
+            background-color: #ff4d4d;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        header {
+            background: url('images/banner.jpg') no-repeat center center/cover;
+            height: 400px;
+            text-align: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        header p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        .content {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        .content h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .card p {
+            color: #777;
+        }
+        .card button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .card button:hover {
+            background-color: #218838;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="support.html">Get Support</a>
+    <a href="legal.jsp">Legal Rights</a>
+    <a href="self-defense.jsp">Self Defense</a>
+    <a href="resources.jsp">Resources</a>
+    <button onclick="window.location.href='login.jsp'">Logout</button>
+</nav>
+
+<!-- Header Section -->
+<header>
+    <h1>End Domestic Violence</h1>
+    <p>Empowering Survivors with Tools, Resources, and Support</p>
+</header>
+
+<!-- Main Content Section -->
+<div class="content">
+    <h2>How We Can Help</h2>
+    <div class="cards">
+        <!-- Survivor Support Card -->
+        <div class="card">
+            <h3>Survivor Support</h3>
+            <p>Access immediate help, counseling services, and guidance to take the next steps towards safety.</p>
+            <button onclick="window.location.href='support.jsp'">Get Help</button>
+        </div>
+        
+        <!-- Legal Support Card -->
+        <div class="card">
+            <h3>Legal Advice</h3>
+            <p>Know your legal rights and options. Our legal advisors are here to help you take action.</p>
+            <button onclick="window.location.href='legal.jsp'">Learn More</button>
+        </div>
+        
+        <!-- Health & Safety Card -->
+        <div class="card">
+            <h3>Health & Safety</h3>
+            <p>Understand health risks and get advice on maintaining your physical and emotional well-being.</p>
+            <button onclick="window.location.href='health.jsp'">Explore Resources</button>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <p>&copy; 2024 FSD-PS03 | Gender-responsive Mechanism to Combat Domestic Violence</p>
+</footer>
+
+</body>
+</html>

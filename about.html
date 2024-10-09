@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ffffff, #b0fff3);
+            color: #333;
+        }
+        .navbar {
+            background: rgba(255, 255, 255, 0.8);
+            border-bottom: 1px solid #ddd;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar img {
+            width: 30px;
+            height: 24px;
+        }
+        .navbar a {
+            color: #333;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+        .navbar button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+        .about-container {
+            padding: 20px;
+            margin: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <a class="navbar-brand" href="home.jsp">
+        <img src="image7.jpg" alt="Logo">
+            DOMESTIC VIOLENCE
+    </a>
+    <div>
+        <a href="lst.html">Admin</a>
+        <a href="victim.html">Victim</a>
+        <a href ="counsellor.html">Counsellor</a>
+        <a href ="genderresponsive.html">Legal Advisor</a>
+        <button onclick="window.location.href='LogoutServlet'">Logout</button>
+    </div>
+</nav>
+<div class="about-container">
+    <h1>About Us</h1>
+    <p>Domestic violence is a complex issue that affects people of all genders, and our platform aims to address these challenges holistically. We understand that gender-based violence often stems from unequal power dynamics, and we strive to offer resources that are comprehensive and tailored to the needs of survivors, with a strong focus on gender equality and health.</p>
+</div>
+</body>
+</html>
